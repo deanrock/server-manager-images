@@ -87,6 +87,9 @@ script:
 - cd $SRC/redis-base/
 - travis_wait docker build -q -t deanrock/server-manager:redis-base .
 - docker push deanrock/server-manager:redis-base
+- cd $SRC/php53-base-hosting/
+- travis_wait docker build -q -t deanrock/server-manager:php53-base-hosting .
+- docker push deanrock/server-manager:php53-base-hosting
 env:
   global:
   - secure: DKCPOEWkrEtBAB9OY7Ata8UgyIP4M4nzbYx86HmB5QIEja38DRs+o2FFKhheyn5khGeM6yW3uphnCrg217hvifITw7ZBDJUI3itkJds3HEC5AeIFjQWakpfaTVe6xgYJT8z4cz/1Fa+VRwPcn/WYcZ8ZqpIZKDMT8g8HShIvCTpOoCqAZXJgz9Y9ohcrBDYFYiYf2TT2vwh9VgxpTqEhlL1NAixxjcvjAugIKBzCD+ZQUGh0xXzcke79hoS9yfErfQkVkLsK0RMjaAsocFG5Ya2pJ9970hwQnly3HSRBdJc38A8pSMXTZn11dKvC8kee9H733c5lOGkTOtb1OA48CxZ28dI5Ya2bEbWtK6/0R2NIAVeKD5vcEaefYaR2e54exZcAQEkS6PkY155ePSbz9w1wHz1pvQmfYsMJpJHvi8Nsn8588DR78ENYFZs2lPUnDC8fVqCgXjAHHU/cp6HiYzWTx51mTt+RE5NQ4lbWTtWRlX5LUlk8qklktKSqYpnQ6T0w1W+25dE+2Kmt8dv7inUOiZ41os3JgMbKOaYazkmh2yVUQndhdCdhVcnn4XAnesQ2kU7euWywVjtd0ygN3cu4nmn1buhZSKayzWCoVkVofkGdpz0E2bFzmZHlJqcHSQztVhIBhq7qDPwXySiZeq25w6gY/9qJmK5N0DqViMM=
