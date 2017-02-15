@@ -7,91 +7,91 @@ script:
 - docker login --username=$DOCKER_USER --password=$DOCKER_PASS
 - export SRC=`pwd`
 - cd $SRC/debian7base/
-- docker build -t deanrock/server-manager:debian7base .
+- docker build -q -t deanrock/server-manager:debian7base .
 - docker push deanrock/server-manager:debian7base
 - cd $SRC/debian7basehosting/
-- docker build -t deanrock/server-manager:debian7basehosting .
+- docker build -q -t deanrock/server-manager:debian7basehosting .
 - docker push deanrock/server-manager:debian7basehosting
 - cd $SRC/debian8base/
-- docker build -t deanrock/server-manager:debian8base .
+- docker build -q -t deanrock/server-manager:debian8base .
 - docker push deanrock/server-manager:debian8base
 - cd $SRC/php56-base/
-- docker build -t deanrock/server-manager:php56-base .
+- docker build -q -t deanrock/server-manager:php56-base .
 - docker push deanrock/server-manager:php56-base
 - cd $SRC/php56-base-hosting/
-- docker build -t deanrock/server-manager:php56-base-hosting .
+- docker build -q -t deanrock/server-manager:php56-base-hosting .
 - docker push deanrock/server-manager:php56-base-hosting
 - cd $SRC/php56-base-shell/
-- docker build -t deanrock/server-manager:php56-base-shell .
+- docker build -q -t deanrock/server-manager:php56-base-shell .
 - docker push deanrock/server-manager:php56-base-shell
 - cd $SRC/python27-base/
-- docker build -t deanrock/server-manager:python27-base .
+- docker build -q -t deanrock/server-manager:python27-base .
 - docker push deanrock/server-manager:python27-base
 - cd $SRC/python27-base-shell/
-- docker build -t deanrock/server-manager:python27-base-shell .
+- docker build -q -t deanrock/server-manager:python27-base-shell .
 - docker push deanrock/server-manager:python27-base-shell
 - cd $SRC/python34-base-shell/
-- docker build -t deanrock/server-manager:python34-base-shell .
+- docker build -q -t deanrock/server-manager:python34-base-shell .
 - docker push deanrock/server-manager:python34-base-shell
 - cd $SRC/python35-base-shell/
-- docker build -t deanrock/server-manager:python35-base-shell .
+- docker build -q -t deanrock/server-manager:python35-base-shell .
 - docker push deanrock/server-manager:python35-base-shell
 - cd $SRC/java8-base/
-- docker build -t deanrock/server-manager:java8-base .
+- docker build -q -t deanrock/server-manager:java8-base .
 - docker push deanrock/server-manager:java8-base
 - cd $SRC/java8-base-shell/
-- docker build -t deanrock/server-manager:java8-base-shell .
+- docker build -q -t deanrock/server-manager:java8-base-shell .
 - docker push deanrock/server-manager:java8-base-shell
 - cd $SRC/go1.4-base/
-- docker build -t deanrock/server-manager:go1.4-base .
+- docker build -q -t deanrock/server-manager:go1.4-base .
 - docker push deanrock/server-manager:go1.4-base
 - cd $SRC/go1.4-base-shell/
-- docker build -t deanrock/server-manager:go1.4-base-shell .
+- docker build -q -t deanrock/server-manager:go1.4-base-shell .
 - docker push deanrock/server-manager:go1.4-base-shell
 - cd $SRC/ruby22-base/
-- docker build -t deanrock/server-manager:ruby22-base .
+- docker build -q -t deanrock/server-manager:ruby22-base .
 - docker push deanrock/server-manager:ruby22-base
 - cd $SRC/ruby22-base-shell/
-- docker build -t deanrock/server-manager:ruby22-base-shell .
+- docker build -q -t deanrock/server-manager:ruby22-base-shell .
 - docker push deanrock/server-manager:ruby22-base-shell
 - cd $SRC/nodejs0.12-base/
-- docker build -t deanrock/server-manager:nodejs0.12-base .
+- docker build -q -t deanrock/server-manager:nodejs0.12-base .
 - docker push deanrock/server-manager:nodejs0.12-base
 - cd $SRC/nodejs0.12-base-shell/
-- docker build -t deanrock/server-manager:nodejs0.12-base-shell .
+- docker build -q -t deanrock/server-manager:nodejs0.12-base-shell .
 - docker push deanrock/server-manager:nodejs0.12-base-shell
 - cd $SRC/nodejs6-base/
-- docker build -t deanrock/server-manager:nodejs6-base .
+- docker build -q -t deanrock/server-manager:nodejs6-base .
 - docker push deanrock/server-manager:nodejs6-base
 - cd $SRC/nodejs6-base-shell/
-- docker build -t deanrock/server-manager:nodejs6-base-shell .
+- docker build -q -t deanrock/server-manager:nodejs6-base-shell .
 - docker push deanrock/server-manager:nodejs6-base-shell
 - cd $SRC/nodejs4-base/
-- docker build -t deanrock/server-manager:nodejs4-base .
+- docker build -q -t deanrock/server-manager:nodejs4-base .
 - docker push deanrock/server-manager:nodejs4-base
 - cd $SRC/nodejs4-base-shell/
-- docker build -t deanrock/server-manager:nodejs4-base-shell .
+- docker build -q -t deanrock/server-manager:nodejs4-base-shell .
 - docker push deanrock/server-manager:nodejs4-base-shell
 - cd $SRC/mongo3.2-base/
-- docker build -t deanrock/server-manager:mongo3.2-base .
+- docker build -q -t deanrock/server-manager:mongo3.2-base .
 - docker push deanrock/server-manager:mongo3.2-base
 - cd $SRC/elixir1.3-base/
-- docker build -t deanrock/server-manager:elixir1.3-base .
+- docker build -q -t deanrock/server-manager:elixir1.3-base .
 - docker push deanrock/server-manager:elixir1.3-base
 - cd $SRC/elixir1.3-base-shell/
-- docker build -t deanrock/server-manager:elixir1.3-base-shell .
+- docker build -q -t deanrock/server-manager:elixir1.3-base-shell .
 - docker push deanrock/server-manager:elixir1.3-base-shell
 - cd $SRC/hhvm-base/
-- docker build -t deanrock/server-manager:hhvm-base .
+- docker build -q -t deanrock/server-manager:hhvm-base .
 - docker push deanrock/server-manager:hhvm-base
 - cd $SRC/memcached-base/
-- docker build -t deanrock/server-manager:memcached-base .
+- docker build -q -t deanrock/server-manager:memcached-base .
 - docker push deanrock/server-manager:memcached-base
 - cd $SRC/rabbitmq-base/
-- docker build -t deanrock/server-manager:rabbitmq-base .
+- docker build -q -t deanrock/server-manager:rabbitmq-base .
 - docker push deanrock/server-manager:rabbitmq-base
 - cd $SRC/redis-base/
-- docker build -t deanrock/server-manager:redis-base .
+- docker build -q -t deanrock/server-manager:redis-base .
 - docker push deanrock/server-manager:redis-base
 env:
   global:
